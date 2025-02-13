@@ -46,7 +46,7 @@ const index = () => {
       {/* <WhySponsor /> */}
       <Testimonies />
       {/* <Organiser /> */}
-      // <PastSpeakersNJudges />
+      {/* // <PastSpeakersNJudges /> */}
       {/* <Team /> */}
       <PreviousProblem/>
       <FAQS />
