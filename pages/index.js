@@ -37,7 +37,7 @@ const index = () => {
       <Wihts />
       {/* <Journey /> */}
       <Glimpse />
-      {/* <Venue /> */}
+      <Venue />
       {/* <Schedule /> */}
       {/* <Prize /> */}
       {/* <Trakcs /> */}
@@ -46,7 +46,7 @@ const index = () => {
       {/* <WhySponsor /> */}
       <Testimonies />
       {/* <Organiser /> */}
-      // <PastSpeakersNJudges />
+      {/* // <PastSpeakersNJudges /> */}
       {/* <Team /> */}
       <PreviousProblem/>
       <FAQS />
