@@ -1,0 +1,72 @@
+@import "./index.css";
+@import "./preloader.css";
+@import "./particle.css";
+@import "./navbar.css";
+@import "./home.css";
+@import "./about.css";
+@import "./wihts.css";
+@import "./venue.css";
+@import "./schedule.css";
+@import "./sponsor.css";
+@import "./Testomonies.css";
+@import "./organiser.css";
+@import "./why_sponsor.css";
+@import "./sponsor-prizes.css";
+@import "./footer.css";
+@import "./tracks.css";
+@import "./faqs.css";
+@import "./built.css";
+@import "./animated.css";
+@import "animate.css";
+@import "./countdown.css";
+@import "./timer.css";
+@import "./prize.css";
+@import "./events.css";
+@import "./speakers.css";
+@import "./Team.css";
+@import "./glimpse.css";
+@import "./GradientText.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  /* overflow-x:clip; */
+}
+
+:root {
+  --transparent-gray: rgba(128, 128, 128, 0.25);
+  --primary-blue: rgb(167 139 250 / 1);
+  --secondary-blue: rgb(167 139 250 / 0.7);
+  --primary-black: rgba(0, 0, 0, 0.7);
+  --secondary-black: rgba(0, 0, 0, 0.3);
+  --primary-pink: #9b5bf5;
+  --white: #fff;
+  --animate-duration: 1000ms !important;
+  --animate-delay: 0.9s !important;
+  --testomonials: linear-gradient(to right, #B741DD, #7D00F2);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  z-index: 1;
+  background-color: #141414;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* ::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background: #d1e5ff;
+  ;
+} */

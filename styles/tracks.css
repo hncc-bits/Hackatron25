@@ -1,0 +1,126 @@
+.track-section {
+  width: 80%;
+  margin: auto;
+}
+.track-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 4rem 0;
+  gap: 2rem;
+}
+
+.Track-Card {
+  width: 240px;
+  height: 300px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #9a0fc6 0%, rgba(138, 10, 179, 0) 100%),
+    linear-gradient(
+      180deg,
+      rgba(103, 18, 183, 0.78) 0%,
+      rgba(138, 10, 179, 0.22) 100%
+    );
+  background: linear-gradient(
+    180deg,
+    rgba(125, 0, 242, 0.5) 0%,
+    rgba(183, 65, 221, 0.5) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.Track-Card:nth-child(1) {
+  background: linear-gradient(
+    60deg,
+    rgba(112, 112, 111, 0.4),
+    rgba(125, 125, 122, 0.4),
+    rgba(142, 141, 141, 0.4),
+    rgba(161, 162, 163, 0.4),
+    rgba(179, 182, 181, 0.4),
+    rgba(190, 192, 194, 0.4)
+  );
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.Track-Card:nth-child(2) {
+  background: linear-gradient(
+    60deg,
+    rgba(235, 209, 151, 0.4),
+    rgba(180, 136, 17, 0.4),
+    rgba(162, 121, 13, 0.4),
+    rgba(187, 155, 73, 0.4)
+  );
+  box-shadow: 0 0 10px #bb9b49;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.Track-Card:nth-child(3) {
+  background: linear-gradient(
+    60deg,
+    rgba(128, 74, 0, 0.3),
+    rgba(137, 94, 26, 0.3),
+    rgba(156, 122, 60, 0.3),
+    rgba(176, 141, 87, 0.3)
+  );
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.Track-Card ul {
+  padding: 0 1.2rem;
+}
+
+/* .Track-Card{ */
+/* rgba(154, 15, 198, 1), rgba(138, 10, 178, 0) */
+.Track-Card .logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 70px;
+}
+.Track-Card .logo img {
+  margin: 0 auto;
+  width: 160px;
+}
+
+.Track-Card a:hover {
+  /* text-decoration: underline !important; */
+  border-bottom: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.tracks h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  width: 75%;
+  text-align: center;
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .tracks h3 {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tracks h3 {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}

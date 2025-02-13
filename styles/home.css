@@ -1,0 +1,387 @@
+/* Home */
+* {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 70vh;
+  margin-top: 2rem;
+}
+
+.logo-div p {
+  margin: 2rem 0 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.logo-div .venue-text {
+  margin: 0;
+  margin-bottom: 2rem;
+  /* font-size: 1.4rem; */
+}
+
+.home #title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  border-right: none;
+  background: linear-gradient(90deg, #A020F0, #8A2BE2, #FF1493);
+  -webkit-text-fill-color: transparent;
+  animation: animateText 6s infinite;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 480px) {
+  .home #title {
+    font-size: 2.4rem;
+  }
+}
+
+/* Animated Text Gradient */
+@keyframes animateText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* The GradientText cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  10% {
+    border-color: var(--primary-blue);
+  }
+}
+
+.sec-text {
+  font-size: 2rem;
+}
+
+.logo-home {
+  width: 30%;
+}
+
+.logo-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: animeAfterLoad 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
+  animation-delay: 6.2s;
+}
+
+@keyframes animeAfterLoad {
+  0% {
+    opacity: 0;
+    transform: scale(5) skew(0deg, 0deg);
+  }
+}
+
+.butHolder {
+  display: none;
+}
+
+.venue-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Responsive Venue Text */
+@media (max-width: 1024px) {
+.venue-text {
+  font-size: 1.6rem;
+}
+}
+
+@media (max-width: 768px) {
+.venue-text {
+  font-size: 1.4rem;
+}
+}
+
+@media (max-width: 480px) {
+.venue-text {
+  font-size: 1.2rem;
+}
+}
+
+
+/* .butHolder iframe,
+.butHolder button {
+  height: 56px !important;
+}
+
+iframe html,
+iframe body,
+iframe button {
+  height: 100%;
+} */
+
+.Btn {
+  font-size: 1.4rem;
+  height: 58px;
+  width: 280px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(-45deg, #A020F0, #8A2BE2, #DDA0DD, #FF00FF);
+  background-size: 300% 300%;
+  animation: animateButton 4s ease infinite;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.Btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 20, 147, 0.9);
+}
+
+/* Responsive Button Sizes */
+@media (max-width: 1024px) {
+  .Btn {
+    width: 240px;
+    height: 58px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Btn {
+    width: 200px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Button animation */
+@keyframes animateButton {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.Btn .icon {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-6%, -50%);
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+.Btn .text {
+  position: absolute;
+  left: 49%;
+  top: 50%;
+  transform: translate(-25%, -50%);
+  z-index: 1;
+  color: var(--primary-blue);
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
+
+.gradient-mask {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: all;
+  position: absolute;
+  inset: 0;
+  width: 25%;
+  height: 100%;
+}
+
+.Btn:hover .gradient-mask {
+  width: 100%;
+}
+
+.Btn:hover .text {
+  color: var(--white);
+}
+
+.black-bg {
+  background-image: linear-gradient(to right, #434343, #000000);
+}
+
+.zinc-bg {
+  background-image: linear-gradient(to left, #27272a, #27272b);
+}
+
+.blue-bg {
+  background-image: linear-gradient(to left, #1e40af, #60a5fa);
+}
+
+.cost1.build-in-animate {
+  animation-play-state: running;
+}
+
+.cost1 {
+  position: absolute;
+  /* bottom: 30%; */
+  left: 7%;
+  /* animation: wobble 10s infinite; */
+  animation: floaty 4s ease infinite;
+}
+
+@keyframes floatx {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes constmove {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+.cost2 {
+  position: absolute;
+  top: 45%;
+  right: 6%;
+  width: fit-content;
+  animation: floaty 6s ease infinite;
+}
+
+.cost1 img {
+  width: 60%;
+}
+.cost2 img {
+  width: 70%;
+}
+.TagContainer .tagText {
+  position: relative;
+}
+
+.tagText.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid var(--white);
+  animation: animate 2s steps(6) infinite;
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Btn {
+    height: 44px;
+    width: 312px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cost2 {
+    top: 16%;
+    right: 0%;
+    width: 75px;
+  }
+  .cost2 img {
+    width: 82%;
+  }
+  
+  .cost1 {
+    bottom: 17%;
+    left: 5%;
+    opacity: 0.7;
+  }
+  .cost1 img {
+    width: 44%;
+  }
+  
+
+  .Btn {
+    width: 220px;
+    height: 54px;
+    font-size: 1.2rem;
+  }
+
+  .logo-div {
+    height: 50vh;
+  }
+
+  .logo-home {
+    width: 85%;
+  }
+
+  .home #title {
+    font-size: 3rem;
+  }
+
+  .logo-div p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .sec-text {
+    font-size: 1.4rem;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .butHolder {
+    width: 70%;
+  }
+} */
