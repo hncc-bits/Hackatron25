@@ -29,30 +29,28 @@ const index = () => {
     });
   }, []);
 
-  return (  
-    <>
-     <Preloader />
+  return (
     <Layout>
+      <Preloader />
       <Landing />
       <About />
       <Wihts />
       {/* <Journey /> */}
       <Glimpse />
-      <Venue />
+      {/* <Venue /> */}
       {/* <Schedule /> */}
       {/* <Prize /> */}
       {/* <Trakcs /> */}
       {/* <Tracks /> */}
-      <Sponsor />
+      <Sponsor />                                                                                                                                                                                                                                                                                                                                                                                                                       
       {/* <WhySponsor /> */}
       <Testimonies />
-      {/* <Organiser /> */}
-      {/* // <PastSpeakersNJudges /> */}
+      {/* <Organiser /> */}                                                       
+      // <PastSpeakersNJudges />                                  
       {/* <Team /> */}
       <PreviousProblem/>
       <FAQS />
     </Layout>
-    </>
   );
 };
 
