@@ -29,9 +29,10 @@ const index = () => {
     });
   }, []);
 
-  return (
+  return (  
+    <>
+     <Preloader />
     <Layout>
-      <Preloader />
       <Landing />
       <About />
       <Wihts />
@@ -51,6 +52,7 @@ const index = () => {
       <PreviousProblem/>
       <FAQS />
     </Layout>
+    </>
   );
 };
 
