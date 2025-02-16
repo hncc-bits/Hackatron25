@@ -38,7 +38,7 @@ const index = () => {
       {/* <Journey /> */}
       <Glimpse />
       <Venue />
-      {/* <Schedule /> */}
+      <Schedule />
       {/* <Prize /> */}
       {/* <Trakcs /> */}
       {/* <Tracks /> */}
