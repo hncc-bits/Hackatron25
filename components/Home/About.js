@@ -2,6 +2,7 @@ import { infoConfig } from "../../config/info";
 import React from "react";
 import Image from "next/image";
 
+
 const About = () => {
   const { about } = infoConfig;
   return (
