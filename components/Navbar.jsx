@@ -1,9 +1,9 @@
-import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import ShootingStars from "../utils/ShootingStars.json";
 import Telescope from "../utils/Telescope.json";
+import {Link} from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,14 +22,14 @@ const Navbar = () => {
 
       <div className={`nav-links ${isOpen ? "active" : ""}`}>
         <ul>
-          <li className="nav-btn"><a href="#home" onClick={toggleMenu}>HOME</a></li>
-          <li className="nav-btn"><a href="#about" onClick={toggleMenu}>ABOUT</a></li>
-          <li className="nav-btn"><a href="#venue" onClick={toggleMenu}>VENUE</a></li>
-          <li className="nav-btn"><a href="#schedule" onClick={toggleMenu}>SCHEDULE</a></li>
-          <li className="nav-btn"><a href="#prizes" onClick={toggleMenu}>PRIZES</a></li>
-          <li className="nav-btn"><a href="#sponsors" onClick={toggleMenu}>SPONSORS</a></li>
-          <li className="nav-btn"><a href="#faqs" onClick={toggleMenu}>FAQS</a></li>
-          <li className="nav-btn"><a href="#contact" onClick={toggleMenu}>CONTACT</a></li>
+        <li className="nav-btn"><Link to="home" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>HOME</Link></li>
+          <li className="nav-btn"><Link to="about" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>ABOUT</Link></li>
+          <li className="nav-btn"><Link to="venue" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>VENUE</Link></li>
+          <li className="nav-btn"><Link to="schedule" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>SCHEDULE</Link></li>
+          <li className="nav-btn"><Link to="prizes" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>PRIZES</Link></li>
+          <li className="nav-btn"><Link to="sponsors" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>SPONSORS</Link></li>
+          <li className="nav-btn"><Link to="faqs" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>FAQS</Link></li>
+          <li className="nav-btn"><Link to="contact" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>CONTACT</Link></li>
         </ul>
       </div>
 
