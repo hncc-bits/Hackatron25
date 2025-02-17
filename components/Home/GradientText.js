@@ -32,10 +32,7 @@ const GradientText = () => {
       </TextContainer>
       </div>
 
-      <VenueText>
-        BIT SINDRI-DHANBAD <br />
-        JHARKHAND, INDIA
-      </VenueText>
+     
         
       {/* <RegisterSection/> */}
     </>
