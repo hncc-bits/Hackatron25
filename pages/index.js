@@ -39,7 +39,7 @@ const index = () => {
       <Glimpse />
       <Venue />
       <Schedule />
-      {/* <Prize /> */}
+      <Prize />
       {/* <Trakcs /> */}
       {/* <Tracks /> */}
       <Sponsor />                                                                                                                                                                                                                                                                                                                                                                                                                       
