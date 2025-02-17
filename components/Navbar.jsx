@@ -22,12 +22,10 @@ const Navbar = () => {
         <a href="#home">
           <img src="/images/logo/hncc.png" alt="Hackatron" style={{ paddingRight: "20px", paddingLeft: "20px" }} />
         </a>
-        <a href="#home">
-          <img src="/images/logo/hackatron.png" alt="Hackatron" style={{ height: "50px", width: "auto" }} />
-        </a>
+        
 
       </div>
-      Hackatron25/public/images/logo/hackatron.png
+     
 
       <div className={`nav-links ${isOpen ? "active" : ""}`}>
         <ul>
