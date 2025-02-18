@@ -33,7 +33,7 @@ const Navbar = () => {
           <li className="nav-btn"><Link to="about" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>ABOUT</Link></li>
           <li className="nav-btn"><Link to="venue" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>VENUE</Link></li>
           <li className="nav-btn"><Link to="schedule" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>SCHEDULE</Link></li>
-          <li className="nav-btn"><Link to="prizes" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>PRIZES</Link></li>
+          <li className="nav-btn"><Link to="prize" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>PRIZES</Link></li>
           <li className="nav-btn"><Link to="sponsors" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>SPONSORS</Link></li>
           <li className="nav-btn"><Link to="faqs" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>FAQS</Link></li>
           <li className="nav-btn"><Link to="contact" smooth={true} spy={true} offset={-70} duration={700} onClick={toggleMenu}>CONTACT</Link></li>
