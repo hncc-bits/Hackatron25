@@ -193,7 +193,7 @@ const Sponsor = () => {
               Type={"PARTNERS"}
               
             >
-              {Allsponsor.PRTNR.map((sponsor) => (
+              {Allsponsor.GOLD.map((sponsor) => (
                 <SponsorWrapper
                   
                   key={sponsor.id}
@@ -211,9 +211,29 @@ const Sponsor = () => {
           <SponsorContainer
             Name={"inkind"}
             Img={communityPartner.Img}
+            Type={"SILVER SPONSORS"}
+          >
+            {Allsponsor.SILVER.map((sponsor) => (
+              <SponsorWrapper
+                key={sponsor.id}
+                Name={sponsor.Name}
+                Img={sponsor.Img}
+                Link={sponsor.Link}
+              />
+            ))}
+          </SponsorContainer>
+        
+            <div className="GoldContainer">
+          <hr className="SilverText"></hr>
+          <h1 style={{fontSize: "40px"}}> PAST SPONSORS </h1>
+          <hr className="SilverTextp"></hr>
+          </div>
+          <SponsorContainer
+            Name={"inkind"}
+            Img={communityPartner.Img}
             Type={"PAST SPONSORS"}
           >
-            {Allsponsor.SPNSR.map((sponsor) => (
+            {Allsponsor.PAST_SPNSRS.map((sponsor) => (
               <SponsorWrapper
                 key={sponsor.id}
                 Name={sponsor.Name}
