@@ -23,7 +23,7 @@ const LinksBtn = () => {
     <div className="butHolder">
       <div
         className="apply-button"
-        data-hackathon-slug="hackatron-3"
+        data-hackathon-slug="hackatron-k"
         data-button-theme="light"
         style={{ height: "44px", width: "312px" }}
       />
