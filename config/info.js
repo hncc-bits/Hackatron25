@@ -12,7 +12,7 @@ export const infoConfig = {
   wihts: [
     {
       id: "1",
-      data:"Hackatron is a national-level hackathon that brings together developers, designers, and problem-solvers from across the country to collaborate and create innovative solutions to real-world challenges. It is a highly competitive event where participants work in teams, brainstorming ideas, developing prototypes, and implementing cutting-edge technologies within a limited timeframe. The hackathon provides a platform for individuals to enhance their technical skills, think creatively, and solve complex problems while working under pressure.",
+      data:"Hackatron is a 36-hour national-level hackathon that brings together developers, designers, and problem-solvers from across the country to collaborate and create innovative solutions to real-world challenges. It is a highly competitive event where participants work in teams, brainstorming ideas, developing prototypes, and implementing cutting-edge technologies within a limited timeframe. The hackathon provides a platform for individuals to enhance their technical skills, think creatively, and solve complex problems while working under pressure.",
     },
     {
       id: "2",
