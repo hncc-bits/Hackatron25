@@ -32,16 +32,20 @@ const Layout = ({ children }) => {
         <meta name="robots" content="all" />
         <meta name="googlebot" content="all" />
 
-        <link rel="canonical" href="https://www.hnccbits.com/" key="canonical" />
+        <link
+          rel="canonical"
+          href="https://www.hnccbits.com/"
+          key="canonical"
+        />
 
         <title>Hackatron</title>
         <meta
           name="description"
-          content="A 24-hour immersive hackathon for all the nerds out there✨. Empowering young minds😇. Turn Ideas into Impact!🚀"
+          content="Hackatron: Design. Debug. Deploy. A 36-hour national level hackathon where you innovate, compete & create real-world impact!"
         />
         <meta
           name="image"
-          content="https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp"
+          content="https://res.cloudinary.com/dz5jfto1v/image/upload/v1740295310/hackatron/eo5wtqiqmqkrsbhq1us7.jpg"
         />
         <meta name="author" content="Hackatron" />
 
@@ -49,12 +53,12 @@ const Layout = ({ children }) => {
         <meta
           property="og:description"
           name="og:description"
-          content="A 24-hour immersive hackathon for all the nerds out there✨. Empowering young minds😇. Turn Ideas into Impact!🚀"
+          content="Hackatron: Design. Debug. Deploy. A 36-hour national level hackathon where you innovate, compete & create real-world impact!"
         />
         <meta
           property="og:image"
           name="og:image"
-          content="https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp"
+          content="https://res.cloudinary.com/dz5jfto1v/image/upload/v1740295310/hackatron/eo5wtqiqmqkrsbhq1us7.jpg"
         />
 
         <meta property="og:type" name="og:type" content="website" />
@@ -67,17 +71,17 @@ const Layout = ({ children }) => {
         <meta name="twitter:title" content="Hackatron" />
         <meta
           name="twitter:description"
-          content="A 24-hour immersive hackathon for all the nerds out there✨. Empowering young minds😇. Turn Ideas into Impact!🚀"
+          content="Hackatron: Design. Debug. Deploy. A 36-hour national level hackathon where you innovate, compete & create real-world impact!"
         />
         <meta name="twitter:site" content="https://www.hnccbits.com/" />
         <meta name="twitter:domain" content="https://www.hnccbits.com/" />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp"
+          content="https://res.cloudinary.com/dz5jfto1v/image/upload/v1740295310/hackatron/eo5wtqiqmqkrsbhq1us7.jpg"
         />
         <meta
           name="twitter:image:src"
-          content="https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp"
+          content="https://res.cloudinary.com/dz5jfto1v/image/upload/v1740295310/hackatron/eo5wtqiqmqkrsbhq1us7.jpg"
         />
         <meta name="twitter:card" content="Hackatron" />
       </Head>
