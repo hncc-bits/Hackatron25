@@ -1,94 +1,134 @@
-
-.Arrow{
-    top: 5px;
-    left: 5px;
-    transform: translate(-5px, -5px);
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.imga{
-    height: 90px;
-    animation: float 3s ease-out infinite;
-}
-@keyframes float{
-    60%{
-        transform: translate(7px);
-    }
-}
-.imgaa{
-    height: 90px;
-    animation: float 3s ease-out infinite;
-}
-@keyframes float{
-    60%{
+/* Floating Animation */
+@keyframes float {
+    60% {
         transform: translateY(7px);
     }
 }
 
-@media only screen and (min-width: 1200px){
-    .HACK{
-        height: 170px;
-    }
-    .contimg{
-        
-        position: absolute;
-        left:39%;
-
-    }
-    
-    .imgaa{
-        position: relative;
-        height: 200px;
-        
-        
-    }
-
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px; /* Increased container width */
+    position: relative;
+    margin: 0 auto; /* Center if wider than parent */
 }
 
-@media only screen  and (max-width: 1199px){
-    .HACK{
-        height: 110px;
-    }
-    .contimg{
-        
-        position: absolute;
-        left:39%;
-
-    }
-    
-    .imgaa{
-        position: relative;
-        height: 200px;
-        
-        
-    }
-
+/* Each logo part */
+.logo-part {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Base layer for logos */
 }
 
-@media only screen and (max-width: 699px){
-    .HACK{
-        height: 50px;
-    }
-    .contimg{
-        position: absolute;
-        left: 36%
-    }
-    .imgaa{
-        position: relative;
-        height: 80px;
-    }
-}
-.imgaa{
-    left: "270px",
+/* Hack Logo */
+.hack-logo {
+    max-width: 50vw;
+    height: auto;
 }
 
-@media only screen and (min-width: 701px){
-    .RegBut{
+/* Main container for the mascot */
+.mascot-container {
+    position: relative; /* Works within flex flow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Above logos */
+    margin: 0 -15px; /* Default overlap control */
+}
+
+/* Mascot Wrapper */
+.mascot-wrapper {
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
+}
+
+/* Mascot Image Styling */
+.mascot-img {
+    height: clamp(60px, 12vw, 180px);
+    animation: float 3s ease-out infinite;
+    transition: transform 0.3s ease;
+}
+
+/* Large Screens */
+@media only screen and (min-width: 1200px) {
+    .hack-logo {
+        max-width: 30vw; /* Larger logos */
+    }
+    .mascot-img {
+        height: 250px; /* Larger mascot */
+    }
+    .mascot-container {
+        margin: 0 -25px; /* Adjusted overlap for larger sizes */
+    }
+    .logo-part:first-child { /* Hack logo container */
+        margin-right: 25px; /* Prevent left overlap */
+    }
+    .logo-part:last-child { /* Tron logo container */
+        margin-left: -25px; /* Allow right overlap */
+    }
+}
+
+/* Medium Screens */
+@media only screen and (max-width: 1199px) and (min-width: 700px) {
+    .hack-logo {
+        max-width: 35vw;
+    }
+    .mascot-img {
+        height: 180px;
+    }
+    .mascot-container {
+        margin: 0 -18px;
+    }
+    .logo-part:first-child {
+        margin-right: 18px;
+    }
+    .logo-part:last-child {
+        margin-left: -18px;
+    }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 699px) {
+    .hack-logo {
+        max-width: 40vw;
+    }
+    .mascot-img {
+        height: 85px;
+    }
+    .mascot-container {
+        margin: 0 -12px;
+    }
+    .logo-part:first-child {
+        margin-right: 12px;
+    }
+    .logo-part:last-child {
+        margin-left: -12px;
+    }
+    .mascot-img {
+        animation: none; /* Reduce excessive floating on mobile */
+    }
+}
+
+/* Register Button Positioning (unchanged from original) */
+@media only screen and (min-width: 701px) {
+    .register-button {
         padding-left: 10%;
     }
 }
 
-@media only screen and (max-width: 700px){
-    .RegBut{
+@media only screen and (max-width: 700px) {
+    .register-button {
         padding-left: 24%;
     }
 }
