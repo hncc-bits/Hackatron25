@@ -1,85 +1,75 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Floating Animation */
 @keyframes float {
     60% {
         transform: translateY(7px);
     }
 }
 
-/* Logo Container */
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1400px; /* Increased container width */
+    max-width: 1400px; 
     position: relative;
-    margin: 0 auto; /* Center if wider than parent */
+    margin: 0 auto; 
 }
 
-/* Each logo part */
 .logo-part {
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 1; /* Base layer for logos */
+    z-index: 1; 
 }
 
-/* Hack Logo */
 .hack-logo {
     max-width: 50vw;
     height: auto;
 }
 
-/* Main container for the mascot */
 .mascot-container {
-    position: relative; /* Works within flex flow */
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2; /* Above logos */
-    margin: 0 -15px; /* Default overlap control */
+    z-index: 2; 
+    margin: 0 -15px;
 }
 
-/* Mascot Wrapper */
 .mascot-wrapper {
     transform: scale(1.25);
     transition: transform 0.3s ease;
 }
 
-/* Mascot Image Styling */
 .mascot-img {
     height: clamp(60px, 12vw, 180px);
     animation: float 3s ease-out infinite;
     transition: transform 0.3s ease;
 }
 
-/* Large Screens */
 @media only screen and (min-width: 1200px) {
     .hack-logo {
-        max-width: 30vw; /* Larger logos */
+        max-width: 30vw; 
     }
     .mascot-img {
-        height: 250px; /* Larger mascot */
+        height: 250px; 
     }
     .mascot-container {
-        margin: 0 -25px; /* Adjusted overlap for larger sizes */
+        margin: 0 -25px; 
     }
-    .logo-part:first-child { /* Hack logo container */
-        margin-right: 25px; /* Prevent left overlap */
+    .logo-part:first-child { 
+        margin-right: 25px; 
     }
-    .logo-part:last-child { /* Tron logo container */
-        margin-left: -25px; /* Allow right overlap */
+    .logo-part:last-child { 
+        margin-left: -25px; 
     }
 }
 
-/* Medium Screens */
 @media only screen and (max-width: 1199px) and (min-width: 700px) {
     .hack-logo {
         max-width: 35vw;
@@ -98,7 +88,6 @@
     }
 }
 
-/* Small Screens */
 @media only screen and (max-width: 699px) {
     .hack-logo {
         max-width: 40vw;
@@ -116,11 +105,10 @@
         margin-left: -12px;
     }
     .mascot-img {
-        animation: none; /* Reduce excessive floating on mobile */
+        animation: none; 
     }
 }
 
-/* Register Button Positioning (unchanged from original) */
 @media only screen and (min-width: 701px) {
     .register-button {
         padding-left: 10%;
