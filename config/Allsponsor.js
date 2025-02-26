@@ -4,7 +4,7 @@ export const Allsponsor = {
     {
       id: "1",
       Name: "Devfolio",
-      Img: "/images/sponsor/devfolio.png",
+      Img: "/images/sponsor/devfolio2.png",
       Link: "https://devfolio.co/",
     }
   ],
@@ -15,13 +15,13 @@ export const Allsponsor = {
     {
       id: "1",
     Name: "ETHIndia",
-    Img: "/images/ETHIndia1.png", alt:"ETHINDIA LOGO",
+    Img: "/images/sponsor/ETHIndia.png", alt:"ETHINDIA LOGO",
     Link: "https://ethindia2024.devfolio.co/",
     },
     {
       id: "2",
     Name: "Polygon",
-    Img: "/images/Polygon-icon.webp", alt:"Polygon Logo",
+    Img: "/images/sponsor/polygon2.png", alt:"Polygon Logo",
     Link: "https://polygon.technology/",
     }
    

@@ -5,7 +5,7 @@ export const TestimoniesConfig = {
     {
       id: 1,
       name: "Rajesh Verma",
-      about: "BIT Sindri 2k19",
+      about: "BIT Sindri",
       description: `Hackatron 1.0 was truly an unforgettable experience! The event was meticulously planned, and the energy at BIT Sindri was electrifying. The problems were challenging, and the mentors were incredibly supportive. Looking forward to the next edition!`,
       icon: "/images/Testimonials/b3.png",
     },
@@ -19,7 +19,7 @@ export const TestimoniesConfig = {
     {
       id: 3,
       name: "Vikram Kedia",
-      about: "BIT Sindri 2k18",
+      about: "BIT Sindri",
       description: `Hackatron 1.0 was a spectacular event! From problem statements to networking opportunities, everything was on point. The 36-hour coding sprint really tested our skills, and the overall atmosphere kept us motivated throughout.`,
       icon: "/images/Testimonials/b6.png",
     }
@@ -31,7 +31,7 @@ export const TestimoniesConfig1 = {
     {
       id: 1,
       name: "Ananya Singh",
-      about: "BIT Sindri 2k16",
+      about: "BIT Sindri",
       description: `The level of innovation at Hackatron was just amazing! It was not just about coding but also about collaboration, problem-solving, and learning from industry experts. Absolutely loved the experience!`,
       icon: "/images/Testimonials/g2.png",
     },

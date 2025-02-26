@@ -1,22 +1,32 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const LinksBtn = () => {
+  const scriptRef = useRef(null);
+
   useEffect(() => {
     if (!document.querySelector('script[src="https://apply.devfolio.co/v2/sdk.js"]')) {
       const script = document.createElement("script");
       script.src = "https://apply.devfolio.co/v2/sdk.js";
       script.async = true;
       script.defer = true;
-      document.body.appendChild(script);
-
+      
+      script.onerror = (error) => {
+        console.error("Error loading Devfolio SDK:", error);
+      };
+      
       script.onload = () => {
-        console.log("Devfolio SDK Loaded");
+        console.log("Devfolio SDK Loaded Successfully");
       };
-
-      return () => {
-        document.body.removeChild(script);
-      };
+      
+      document.body.appendChild(script);
+      scriptRef.current = script;
     }
+
+    return () => {
+      if (scriptRef.current && document.body.contains(scriptRef.current)) {
+        document.body.removeChild(scriptRef.current);
+      }
+    };
   }, []);
 
   return (

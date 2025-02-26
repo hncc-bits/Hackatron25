@@ -11,17 +11,24 @@ const GradientText = () => {
   return (
     <>
 
-      <div style={{display:"flex", position: "absolute", padding: "0px 0px 400px 0px"}}>
-        <div ><img className="HACK" src="images/arrow2.jpg" alt=""/></div>
-        
-        <div className="contimg" >
-          <div className="imgaad" ><img className="imgaa" src="images/arrow.jpg" alt="" /></div>
-        </div>
-        
-        <div ><img className="HACK" src="images/arrow 3.jpg" alt="" /></div>
-      </div>
+<div className="logo-container">
+  <div className="logo-part">
+    <img className="hack-logo" src="images/hack.jpg" alt="Hack Logo"/>
+  </div>
+  
+  <div className="mascot-container">
+    <div className="mascot-wrapper">
+      <img className="mascot-img" src="images/mascot.jpg" alt="Mascot"/>
+    </div>
+  </div>
+  
+  <div className="logo-part">
+    <img className="hack-logo" src="images/tron.jpg" alt="Tron Logo"/>
+  </div>
+</div>
+
       <div style={{
-        paddingTop: "170px"
+        paddingTop: "60px"
       }}>
       <TextContainer>
         {titleWords.map((word, index) => (
