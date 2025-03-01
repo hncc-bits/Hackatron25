@@ -104,15 +104,14 @@
   align-items: center;
   margin-top: 1.5rem; 
   width: 100%;
-  pointer-events: none;
 }
 
 .butHolder .apply-button {
-  pointer-events: auto;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
-.butHolder iframe {
+/* .butHolder iframe {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,11 +119,10 @@
   height: 44px; 
   border: none;
   cursor: pointer;
-}
+} */
 
 .butHolder:hover .apply-button {
-  transform: scale(1.05); /* Slight zoom on hover */
-  transition: transform 0.2s ease-in-out;
+  transform: scale(1.05); /* Slight zoom effect */
 }
 
 @media (max-width: 480px) {
