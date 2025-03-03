@@ -50,8 +50,10 @@ const Popup = ({ track, onClose }) => {
     <div className={`popup-overlay ${show ? "show" : ""}`} onClick={onClose}>
       <div className={`popup-content ${show ? "show" : ""}`} onClick={(e) => e.stopPropagation()}>
         <h2>{track.title}</h2>
+        <p><strong>Problem Statement Title:</strong> {track.problem}</p>
+        <p><strong>Description:</strong> {track.description}</p>
+        
         <p><strong>Preferred Tech Stack:</strong> {track.techStack}</p>
-        <p>{track.description}</p>
         <button onClick={onClose}>Close</button>
       </div>
     </div>
