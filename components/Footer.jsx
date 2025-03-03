@@ -74,8 +74,8 @@ const Footer = () => {
           <h3 className="footer-title">Contact Us</h3>
 
           <div className="contactList">
-            <Link href="mailto:hnccbits@gmail.com" target="_blank">
-              hnccbits@gmail.com
+            <Link href="mailto:hackatron@bitsindri.ac.in" target="_blank">
+            hackatron@bitsindri.ac.in
             </Link>
           </div>
         </div>

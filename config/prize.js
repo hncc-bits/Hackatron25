@@ -12,7 +12,7 @@ export const prizeConfig = [
     {
         pid: "prize--1",
         data: "first-prize",
-        lotty: "₹25000",
+        lotty: "₹20000",
         pname: First,
     },
     {
