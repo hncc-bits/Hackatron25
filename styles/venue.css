@@ -41,7 +41,24 @@
   text-align: center;
   color: var(--primary-blue);
 }
+.extra-info ul {
+  list-style: none;
+  padding: 0;
+}
 
+.extra-info ul li {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 5px 0;
+  position: relative;
+  padding-left: 30px;
+}
+.extra-info ul li::before {
+  content: "🚀";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
 .venue-section p {
   font-size: 1.1rem;
   line-height: 1.6rem;
@@ -95,15 +112,13 @@
     letter-spacing: 0.08em;
     color: var(--primary-blue);
   }
-
-  .venue-section p {
-    text-align: right;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    letter-spacing: 0.08em;
-    color: var(--white);
-  }
-
+  .extra-info ul li {
+    font-size: 1.2rem; 
+    padding-left: 35px; 
+}
+.extra-info ul li::before {
+    font-size: 1.2rem; 
+}
   .venue-section .divider {
     width: 5px;
     height: 380px;
@@ -136,7 +151,13 @@
     font-size: 1.5rem;
     line-height: 2rem;
   }
-
+  .extra-info ul li {
+    font-size: 1.3rem; 
+    padding-left: 40px; 
+}
+.extra-info ul li::before {
+    font-size: 1.3rem; 
+}
   .venue-section p {
     font-size: 1rem;
     line-height: 1.4rem;
@@ -154,18 +175,27 @@
 
 @media screen and (max-width: 500px) {
   .venue-section {
-    padding: 1rem; 
+    padding: 0rem; 
   }
 
   .venue-section p {
     font-size: 0.9rem; 
   }
 
-  .venue-section h2 {
+  .venue-section h2 
+  {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
-
+  .extra-info ul li
+   {
+    font-size: 0.9rem; 
+    padding-left: 20px; 
+}
+.extra-info ul li::before 
+{
+    font-size: 1rem; 
+}
   .venue-section .venue-wrapper {
     padding: 20px;
     width: calc(100% - 2rem); 

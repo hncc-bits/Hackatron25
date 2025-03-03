@@ -18,13 +18,6 @@ export const Allsponsor = {
     Img: "/images/sponsor/ETHIndia.png", alt:"ETHINDIA LOGO",
     Link: "https://ethindia2024.devfolio.co/",
     },
-    {
-      id: "2",
-    Name: "Polygon",
-    Img: "/images/sponsor/polygon2.png", alt:"Polygon Logo",
-    Link: "https://polygon.technology/",
-    }
-   
   ],
 
   

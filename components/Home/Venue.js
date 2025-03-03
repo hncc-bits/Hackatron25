@@ -20,17 +20,20 @@ const Venue = () => {
           <div className="date">
             <h2>Date and Time</h2>
             <p>
-              13th April 2025
+              13th-14th April 2025
               <br />
               8:00 AM Onwards
             </p>
           </div>
           <div className="extra-info">
-            <h2>Extra information</h2>
-            <p>
-            Join Hackatron 2025! 🚀 Solve real-world challenges, showcase creativity,
-             and win big. Network with innovators, collaborate with experts, and boost your skills. Don’t miss this chance to shine!
-            </p>
+            <h2>Why join ?</h2>
+          <ul>
+            <li> Exciting cash prizes</li>
+            <li>Free meal & accommodation </li>
+            <li>Thrilling fun events & networking </li>
+            <li>Industry mentorship & recruitment opportunities</li>
+            
+          </ul>
           </div>
         </div>
 
