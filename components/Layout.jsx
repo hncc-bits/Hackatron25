@@ -27,8 +27,8 @@ const Layout = ({ children }) => {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="mask-icon" href="/favicon.ico" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="mask-icon" href="/images/logo/HNCC7557-01.png" />
+        <link rel="icon" href="/images/logo/HNCC7557-01.png" />
         <meta name="robots" content="all" />
         <meta name="googlebot" content="all" />
 

@@ -35,6 +35,11 @@
   display: flex;
 }
 
+.logo1 img {
+  width: 83px; 
+  height: auto;  
+}
+
 .nav-links {
   flex: 2;
   display: flex;

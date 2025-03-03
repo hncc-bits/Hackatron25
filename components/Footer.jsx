@@ -11,10 +11,10 @@ const Footer = () => {
         </Link>
             
             <Link href="https://www.hnccbits.com/">
-              <img src="/images/logo/hncc.png" alt="Hackatron" style={{ width: "100px", height: "auto", paddingLeft: "20px"}} />
+              <img src="/images/logo/hncc.png" alt="Hackatron" style={{ width: "100px", height: "auto", marginLeft: "7px"}} />
             </Link> 
             <Link href="/">
-              <img src="/images/logo/hackatron.png" alt="Hackatron" style={{ width: "148px", height: "auto" , paddingLeft: "20px"}}  />
+              <img src="/images/logo/HNCC7557-01.png" alt="Hackatron" style={{ width: "148px", height: "auto" ,marginRight: "18px"}}  />
         </Link>
             
                      
