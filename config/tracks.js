@@ -86,33 +86,43 @@ export const trackConfig = {
   Track: [
     {
       id: "1",
-      logo: "/images/astrohealth.png",
-      title: "Healthcare",
+      logo: "/images/astrotech_nobg.png",
+      title: "Technology",
+      techStack: "React, Node.js, MongoDB, Express.js",
+      description: "Technology drives the modern world, transforming how we live, work, and connect. This track is for innovators eager to explore new ideas, solve real-world problems, and make an impact. Whether you're a beginner or an expert, join us in shaping the future!"
     },
     {
       id: "2",
-      logo: "/images/astrogiri_transparent.png",
-      title: "Agriculture",
+      logo: "/images/astroaiml.png",
+      title: "AI/ML",
+      techStack: "Python, TensorFlow, Keras, PyTorch",
+      description: "AI and ML are transforming industries and shaping the future. This track is for innovators passionate about building intelligent systems that learn and adapt. Whether you're a beginner or an expert, explore new ideas, solve real-world problems, and make an impact!",
     },
     {
       id: "3",
-      logo: "/images/astrotech_nobg.png",
-      title: "Technology",
+      logo: "/images/astroweb3.png",
+      title: "Blockchain",
+      techStack: "Solidity, Web3.js, Ethereum, IPFS",
+      description: "Blockchain is transforming transactions, trust, and digital interactions. This track is for those passionate about building decentralized apps, smart contracts, and digital assets. Whether you're a beginner or an expert, explore new ideas, solve real problems, and make an impact!",
     },
     {
       id: "4",
-      logo: "/images/astroaiml.png",
-      title: "AI/ML",
+      logo: "/images/astrogiri_transparent.png",
+      title: "Education",
+      techStack: "React, Node.js, MongoDB, Express.js",
+      description: "Education unlocks human potential and shapes the future. This track is for those passionate about innovating how we learn, teach, and collaborate. Whether you're a student, educator, or edtech enthusiast, explore new ideas, solve real problems, and make an impact!",
     },
     {
       id: "5",
-      logo: "/images/astroweb3.png",
-      title: "Web3",
-    },
-    {
-      id: "6",
       logo: "/images/astroopen.png",
       title: "Open Innovation",
+      techStack: "Any",
+      description: "Open Innovation fosters collaboration and co-creation to solve complex challenges. This track is for designers, developers, and entrepreneurs eager to explore new ideas, tackle real-world problems, and make a lasting impact!",
     },
+    // {
+    //   id: "6",
+    //   logo: "/images/astrohealth.png",
+    //   title: "Healthcare",
+    // },
   ],
 };
