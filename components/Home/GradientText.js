@@ -38,9 +38,6 @@ const GradientText = () => {
         ))}
       </TextContainer>
       </div>
-
-     
-        
       {/* <RegisterSection/> */}
     </>
   );
