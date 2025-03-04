@@ -43,7 +43,7 @@ const LinksBtn = () => {
         rel="noopener noreferrer"
         className="brochure-btn"
       >
-        Brochure
+        RULEBOOK
       </a>
     </div>
   );
