@@ -145,7 +145,11 @@
 }
 
 .popup-content {
-  background: #a1a2aa;
+  background: linear-gradient(
+    180deg,
+    rgba(112, 112, 111, 0.4) 0%,
+    rgba(183, 65, 221, 0.5) 100%
+  );
   padding: 30px;
   border-radius: 10px;
   max-width: 600px;
@@ -158,6 +162,7 @@
   opacity: 0;
 }
 
+
 .popup-content.show {
   transform: translateY(0);
   opacity: 1;
@@ -166,16 +171,16 @@
 .popup-content h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #302c38;
+  color: #dcd5e1;
 }
 
 .popup-content p {
   font-size: 1.1rem;
   margin-bottom: 15px;
-  color: #302c38;
+  color: #dcd5e1;
 }
 .popup-content button {
-  background: #0070f3;
+  background:   rgba(186, 185, 189, 0.3);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -186,5 +191,5 @@
 }
 
 .popup-content button:hover {
-  background: #005bb5;
+  background: #446990;
 }

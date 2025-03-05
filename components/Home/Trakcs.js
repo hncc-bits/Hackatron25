@@ -9,6 +9,7 @@ const cardStyle = {
   padding: "20px",
   width: "250px",
   height: "200px",
+  cursor: "pointer",
 };
 const headingStyle = {
   fontSize: "1.5rem",
@@ -17,7 +18,7 @@ const headingStyle = {
 
 const TrackCard = ({ logo, title, onClick }) => {
   return (
-    <div className="tracks-card" style={cardStyle} onClick={onClick}>
+    <div className="tracks-card" style={cardStyle} onClick={onClick} title="See Problem Statement">
       <div className="centered-icon">
         <Image
           src={logo}
