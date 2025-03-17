@@ -9,7 +9,7 @@ const cardStyle = {
   padding: "20px",
   width: "250px",
   height: "200px",
-  cursor: "pointer",
+  cursor: "pointer", // Add cursor pointer
 };
 const headingStyle = {
   fontSize: "1.5rem",
@@ -47,14 +47,26 @@ const Popup = ({ track, onClose }) => {
 
   if (!track) return null;
 
+  const { problem,id ,title, techStack, description, challenges,chalengeDescription } = track;
+
   return (
     <div className={`popup-overlay ${show ? "show" : ""}`} onClick={onClose}>
       <div className={`popup-content ${show ? "show" : ""}`} onClick={(e) => e.stopPropagation()}>
-        <h2>{track.title}</h2>
-        <p><strong>Problem Statement Title:</strong> {track.problem}</p>
-        <p><strong>Description:</strong> {track.description}</p>
-        
-        <p><strong>Preferred Tech Stack:</strong> {track.techStack}</p>
+        <h2>{title}</h2>
+        <p><strong>Problem Statement (PS-{id}): </strong> {problem}</p>
+        <div className="description">
+          <p><strong>Description:</strong>{description}</p>
+          <p>{challenges && <strong>Challenge:</strong>}
+          <p>{chalengeDescription}
+          <ol>
+            {challenges?.map((challenge, index) => (
+              <li key={index}>{challenge}</li>
+            ))}
+          </ol>
+          </p>
+          </p>
+        </div>
+        {techStack && <p><strong>Preferred Tech Stack:</strong> {techStack}</p> }
         <button onClick={onClose}>Close</button>
       </div>
     </div>
