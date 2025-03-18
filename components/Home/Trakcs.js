@@ -66,7 +66,7 @@ const Popup = ({ track, onClose }) => {
           </p>
           </p>
         </div>
-        {techStack && <p><strong>Preferred Tech Stack:</strong> {techStack}</p> }
+        {techStack && <p><strong>Note:</strong> {techStack}</p> }
         <button onClick={onClose}>Close</button>
       </div>
     </div>
