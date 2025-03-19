@@ -1,3 +1,7 @@
+body.no-scroll {
+  overflow-y: hidden; 
+}
+
 .track-section {
   width: 80%;
   margin: auto;
@@ -132,14 +136,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
   opacity: 0;
   transition: opacity 0.5s ease;
-  overflow: hidden;
+  overflow-y: auto; /* Allow scrolling */
 }
 
 .popup-overlay.show {
@@ -149,20 +153,21 @@
 .popup-content {
   background: linear-gradient(
     180deg,
-    rgba(125, 0, 242, 0.5) 0%,
-    rgba(183, 65, 221, 0.5) 100%
+    rgba(125, 0, 242, 0.7) 0%,
+    rgba(183, 65, 221, 0.7) 100%
   );
   padding: 30px;
   border-radius: 10px;
   max-width: 600px;
   width: 90%;
-  max-height: 80vh; /* Set maximum height */
+  max-height: 80vh;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
   transform: translateY(20px);
   transition: transform 0.5s ease, opacity 0.3s ease;
   opacity: 0;
+  box-sizing: border-box;
   overflow-y: auto; /* Enable vertical scrolling */
 }
 

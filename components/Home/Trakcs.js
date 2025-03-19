@@ -40,14 +40,16 @@ const Popup = ({ track, onClose }) => {
   useEffect(() => {
     if (track) {
       setShow(true);
+      document.body.classList.add("no-scroll");
     } else {
       setShow(false);
+      document.body.classList.remove("no-scroll");
     }
   }, [track]);
 
   if (!track) return null;
 
-  const { problem,id ,title, techStack, description, challenges,chalengeDescription } = track;
+  const { problem,id ,title, techStack, description, challenges,challengeDescription } = track;
 
   return (
     <div className={`popup-overlay ${show ? "show" : ""}`} onClick={onClose}>
@@ -57,7 +59,7 @@ const Popup = ({ track, onClose }) => {
         <div className="description">
           <p><strong>Description:</strong>{description}</p>
           <p>{challenges && <strong>Challenge:</strong>}
-          <p>{chalengeDescription}
+          <p>{challengeDescription}
           <ol>
             {challenges?.map((challenge, index) => (
               <li key={index}>{challenge}</li>
