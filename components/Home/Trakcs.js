@@ -40,10 +40,8 @@ const Popup = ({ track, onClose }) => {
   useEffect(() => {
     if (track) {
       setShow(true);
-      document.body.classList.add("no-scroll");
     } else {
       setShow(false);
-      document.body.classList.remove("no-scroll");
     }
   }, [track]);
 
