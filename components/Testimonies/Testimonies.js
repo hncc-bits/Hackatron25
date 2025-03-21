@@ -12,7 +12,7 @@ const Testimonies = () => {
         <div className="Testomonies-main-div" style={{}}>
           {/* Map over testimonies */}
           {TestimoniesConfig.Details.map((item) => (
-            <div key={item.id} className="Testomonies-section">
+            <div key={item.id} className="Testomonies-section" data-lenis-prevent>
               <p>{item.description}</p>
               <div className="Testomonies-Info">
                 <Image
@@ -34,7 +34,7 @@ const Testimonies = () => {
         <div className="Testomonies-main-div" style={{}}>
           {TestimoniesConfig1.Details.map((item) => (
             //
-            <div key={item.id} className="Testomonies-section">
+            <div key={item.id} className="Testomonies-section" data-lenis-prevent>
               <p>{item.description}</p>
               <div className="Testomonies-Info">
                 <Image
