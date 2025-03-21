@@ -50,7 +50,7 @@ const Popup = ({ track, onClose }) => {
   const { problem,id ,title, techStack, description, challenges,chalengeDescription } = track;
 
   return (
-    <div className={`popup-overlay ${show ? "show" : ""}`} onClick={onClose}>
+    <div className={`popup-overlay ${show ? "show" : ""}`} onClick={onClose} data-lenis-prevent>
       <div className={`popup-content ${show ? "show" : ""}`} onClick={(e) => e.stopPropagation()}>
         <h2>{title}</h2>
         <p><strong>Problem Statement (PS-{id}): </strong> {problem}</p>
