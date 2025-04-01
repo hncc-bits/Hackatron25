@@ -107,7 +107,7 @@ export const trackConfig = {
       problem: "Fair & Transparent Ticket Booking Platform Using Blockchain",
       techStack: " Using Ethereum-based architecture.",
       description: "Traditional ticket booking systems suffer from fake tickets, scalping, and lack of transparency. Fraudulent sellers often duplicate tickets and automated bots buy them in bulk, leading to unfair reselling practices and overpriced tickets. A decentralized, tamper-proof solution is needed to eliminate intermediaries and enhance ticket security.",
-      chalengeDescription: "Build a blockchain-based ticketing platform that ensures fair pricing, authenticity, and secure ownership using NFTs. Your system should:",
+      challengeDescription: "Build a blockchain-based ticketing platform that ensures fair pricing, authenticity, and secure ownership using NFTs. Your system should:",
       challenges: [
         "Issue Tickets as NFTs – Each ticket should be a unique, non-fungible token (NFT) on the blockchain.",
         "Organizer-Controlled Resale Policy – Event organizers should be able to Enable/Disable the resale of tickets and can set a fixed resale price or limit price-hikes to prevent scalping.",
@@ -121,7 +121,7 @@ export const trackConfig = {
       title: "Technology",
       problem: "Geolocation-Based Attendance Tracking for College Students",
       description: "Traditional attendance tracking in colleges relies on manual roll calls or ID-based scanning, leading to inefficiencies, proxy attendance, and time wastage. An automated geolocation-based attendance system can streamline this process, ensuring accurate and tamper-proof student attendance records while reducing administrative efforts.",
-      chalengeDescription:"Develop an application that allows students to check in and out automatically when they enter or leave their classroom premises. The system should also support manual check-in, ensuring real-time validation. The solution must:",
+      challengeDescription:"Develop an application that allows students to check in and out automatically when they enter or leave their classroom premises. The system should also support manual check-in, ensuring real-time validation. The solution must:",
       challenges: [
         "Prevent Proxy Attendance: Ensure students cannot spoof their location using VPNs, mock GPS apps, or other methods.",
         "Class-Specific Attendance: Track attendance based on individual course schedules rather than just campus presence.",
@@ -135,7 +135,7 @@ export const trackConfig = {
       title: "Education",
       problem: "Alumni-Student Networking & Mentorship Platform",
       description: "Many students from our college aspire to pursue higher education in North America. However, they often struggle with selecting the right universities, understanding course structures, and adapting to cultural differences. Without proper guidance, students rely on scattered online resources, leading to confusion and uninformed decisions. Meanwhile, alumni who have already navigated this journey possess valuable insights that could help incoming students, but there is no structured platform to connect them effectively.",
-      chalengeDescription:"Develop a centralized alumni-student networking platform where students can connect with alumni for mentorship, career guidance, and university insights. The platform should allow:",
+      challengeDescription:"Develop a centralized alumni-student networking platform where students can connect with alumni for mentorship, career guidance, and university insights. The platform should allow:",
       challenges: [
         "User Authentication & Roles: Secure login with distinct roles for Students, Alumni, and Admin.",
         "Profile Management: Users can create and update profiles with academic and professional details.",

@@ -10,7 +10,13 @@
   margin: 4rem 0;
   gap: 2rem;
 }
+.tracks-card {
+  transition: transform 0.3s ease;
+}
 
+.tracks-card:hover {
+  transform: scale(1.08); 
+}
 .Track-Card {
   width: 240px;
   height: 300px;
@@ -32,7 +38,7 @@
   align-items: center;
   padding: 1.5rem;
   margin-top: 2rem;
-  cursor: pointer; /* Add cursor pointer */
+  cursor: pointer; 
 }
 
 .Track-Card:nth-child(1) {
@@ -81,8 +87,6 @@
   padding: 0 1.2rem;
 }
 
-/* .Track-Card{ */
-/* rgba(154, 15, 198, 1), rgba(138, 10, 178, 0) */
 .Track-Card .logo {
   display: flex;
   align-items: center;
@@ -95,7 +99,6 @@
 }
 
 .Track-Card a:hover {
-  /* text-decoration: underline !important; */
   border-bottom: 1px solid var(--primary-blue);
   color: var(--primary-blue);
 }
@@ -110,6 +113,11 @@
   border: 1px solid var(--primary-blue);
   padding: 0.5rem;
   border-radius: 10px;
+}
+.ceneterd-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -132,13 +140,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
   opacity: 0;
   transition: opacity 0.5s ease;
+  overflow-y: auto; /* Allow scrolling */
 }
 
 .popup-overlay.show {
@@ -148,20 +157,22 @@
 .popup-content {
   background: linear-gradient(
     180deg,
-    rgba(125, 0, 242, 0.5) 0%,
-    rgba(183, 65, 221, 0.5) 100%
+    rgba(125, 0, 242, 0.7) 0%,
+    rgba(183, 65, 221, 0.7) 100%
   );
   padding: 30px;
   border-radius: 10px;
   max-width: 600px;
   width: 90%;
-  max-height: 80vh; /* Set maximum height */
+  max-height: 80vh;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
   transform: translateY(20px);
   transition: transform 0.5s ease, opacity 0.3s ease;
   opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
   overflow-y: auto; /* Enable vertical scrolling */
 }
 

@@ -6,19 +6,23 @@ import { trackConfig } from "../../config/tracks";
 const cardStyle = {
   justifyContent: "center",
   alignItems: "center",
-  padding: "20px",
+  padding: "20px 20px 30px 20px",
   width: "250px",
   height: "200px",
-  cursor: "pointer", // Add cursor pointer
+  cursor: "pointer",
 };
 const headingStyle = {
-  fontSize: "1.5rem",
+  fontSize: "1.4rem",
   marginBottom: "10px",
 };
 
 const TrackCard = ({ logo, title, onClick }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className="tracks-card" style={cardStyle} onClick={onClick} title="See Problem Statement">
+    <div className="tracks-card" style={cardStyle} onClick={onClick} title="See Problem Statement"
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}>
       <div className="centered-icon">
         <Image
           src={logo}
@@ -29,7 +33,7 @@ const TrackCard = ({ logo, title, onClick }) => {
           height={150}
         />
       </div>
-      <h2 style={headingStyle}>{title}</h2>
+      <h2 style={headingStyle}>{isHovered ? "See Problem Statement" : title}</h2>
     </div>
   );
 };
@@ -47,7 +51,7 @@ const Popup = ({ track, onClose }) => {
 
   if (!track) return null;
 
-  const { problem,id ,title, techStack, description, challenges,chalengeDescription } = track;
+  const { problem,id ,title, techStack, description, challenges,challengeDescription } = track;
 
   return (
     <div className={`popup-overlay ${show ? "show" : ""}`} onClick={onClose} data-lenis-prevent>
@@ -57,7 +61,7 @@ const Popup = ({ track, onClose }) => {
         <div className="description">
           <p><strong>Description:</strong>{description}</p>
           <p>{challenges && <strong>Challenge:</strong>}
-          <p>{chalengeDescription}
+          <p>{challengeDescription}
           <ol>
             {challenges?.map((challenge, index) => (
               <li key={index}>{challenge}</li>
@@ -66,7 +70,7 @@ const Popup = ({ track, onClose }) => {
           </p>
           </p>
         </div>
-        {techStack && <p><strong>Preferred Tech Stack:</strong> {techStack}</p> }
+        {techStack && <p><strong>Note:</strong> {techStack}</p> }
         <button onClick={onClose}>Close</button>
       </div>
     </div>
