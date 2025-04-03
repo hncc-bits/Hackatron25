@@ -11,6 +11,7 @@ const cardStyle = {
   height: "200px",
   cursor: "pointer",
 };
+
 const headingStyle = {
   fontSize: "1.4rem",
   marginBottom: "10px",
@@ -20,9 +21,14 @@ const TrackCard = ({ logo, title, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="tracks-card" style={cardStyle} onClick={onClick} title="See Problem Statement"
-    onMouseEnter={() => setIsHovered(true)}
-    onMouseLeave={() => setIsHovered(false)}>
+    <div
+      className="tracks-card"
+      style={cardStyle}
+      onClick={onClick}
+      title="See Problem Statement"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div className="centered-icon">
         <Image
           src={logo}
@@ -51,33 +57,62 @@ const Popup = ({ track, onClose }) => {
 
   if (!track) return null;
 
-  const { problem,id ,title, techStack, description, challenges,challengeDescription } = track;
+  const { problem, id, title, techStack, description, challenges, challengeDescription } = track;
 
   return (
-    <div className={`popup-overlay ${show ? "show" : ""}`} onClick={onClose} data-lenis-prevent>
+    <div className={`popup-overlay ${show ? "show" : ""}`} onClick={onClose}>
       <div className={`popup-content ${show ? "show" : ""}`} onClick={(e) => e.stopPropagation()}>
-        <h2>{title}</h2>
-        <p><strong>Problem Statement (PS-{id}): </strong> {problem}</p>
-        <div className="description">
-          <p><strong>Description:</strong>{description}</p>
-          <p>{challenges && <strong>Challenge:</strong>}
-          <p>{challengeDescription}
-          <ol>
-            {challenges?.map((challenge, index) => (
-              <li key={index}>{challenge}</li>
-            ))}
-          </ol>
-          </p>
-          </p>
+        <div className="popup-header">
+          <h2>Problem Statement Details (PS-{id})</h2>
+          <button className="close-btn" onClick={onClose}>×</button>
         </div>
-        {techStack && <p><strong>Note:</strong> {techStack}</p> }
-        <button onClick={onClose}>Close</button>
+        
+        <table className="problem-table">
+          <tbody>
+            <tr>
+              <th>Track</th>
+              <td>{title}</td>
+            </tr>
+            <tr>
+              <th>Problem Statement</th>
+              <td>{problem}</td>
+            </tr>
+            {techStack && (
+              <tr>
+                <th>Technology Stack</th>
+                <td>{techStack}</td>
+              </tr>
+            )}
+            <tr>
+              <th>Description</th>
+              <td>{description}</td>
+            </tr>
+            {challengeDescription && (
+              <tr>
+                <th>Challenge Description</th>
+                <td>{challengeDescription}</td>
+              </tr>
+            )}
+            {challenges && challenges.length > 0 && (
+              <tr>
+                <th>Key Challenges</th>
+                <td>
+                  <ol className="challenges-list">
+                    {challenges.map((challenge, index) => (
+                      <li key={index}>{challenge}</li>
+                    ))}
+                  </ol>
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
       </div>
     </div>
   );
 };
 
-const Trakcs = () => {
+const Tracks = () => {
   const { Track } = trackConfig;
   const [selectedTrack, setSelectedTrack] = useState(null);
 
@@ -90,36 +125,23 @@ const Trakcs = () => {
   };
 
   return (
-    <SectionLayout Title="PROBLEM STATEMENT" Classname={"why-sponsor-section tracks"}>
+    <SectionLayout Title="TRACKS" Classname={"why-sponsor-section tracks"}>
       <h3>
-      Hackatron is a platform to Think, Build, and Launch, welcoming all skill levels to explore innovation, solve real-world challenges, and push technological boundaries. With diverse tracks, it fosters hands-on problem-solving, creativity, and collaboration.
+        Hackatron features diverse tracks designed to help hackers tackle unique challenges while fostering creativity,
+        collaboration, and innovation.
         <br />
-        Beyond competition, Hackatron promotes learning, networking, and impact. Whether enhancing skills, connecting with innovators, or launching ideas, it provides the ideal space to turn vision into reality.
-=      </h3>
-      <div className="tracks-container">      
-      <div className="table-container">
-        <table className="tracks-table">
-          <thead>
-            <tr>
-              <th>Statement</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Track.map((item, index) => (
-              <tr key={index} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
-                <td>{item.statement}</td>
-                <td>{item.description}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        Hackatron goes beyond being just an event—it's an opportunity to Think, Build, and Launch. With cutting-edge
+        tracks for all skill levels, from beginners to experts, it offers a platform to explore new ideas, solve
+        real-world problems, and create a lasting impact. Join us on this exciting journey of discovery and innovation!
+      </h3>
+      <div className="tracks-container">
+        {Track.map((track) => (
+          <TrackCard {...track} key={track.id} onClick={() => handleCardClick(track)} />
+        ))}
       </div>
-    </div>
-
       <Popup track={selectedTrack} onClose={handleClosePopup} />
     </SectionLayout>
   );
-};  
+};
 
-export default Trakcs;
+export default Tracks;
