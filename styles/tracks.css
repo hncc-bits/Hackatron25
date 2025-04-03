@@ -243,7 +243,7 @@
   
   .popup-content {
     background-color: #1f2937;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     max-width: 1600px;
     width: 90%;
@@ -296,7 +296,7 @@
   
   .problem-table th, 
   .problem-table td {
-    padding: 16px 24px;
+    padding: 10px 24px;
     text-align: left;
     vertical-align: top;
     border-bottom: 1px solid #4b5563;

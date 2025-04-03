@@ -91,6 +91,7 @@ export const trackConfig = {
       problem: "SecurePDF - Automated PII Redaction in PDFs",
       techStack: "Using Python-based architecture",
       description: "With the increasing exchange of digital documents, especially PDFs, ensuring the privacy of Personally Identifiable Information (PII) has become a crucial challenge. Organizations handling sensitive documents—such as financial reports, legal contracts, and medical records—must comply with data protection regulations like GDPR, HIPAA, and CCPA. However, manually redacting PII is time-consuming and prone to human error. To address this, propose an automated solution that detects PII in PDFs, replaces it with masked values or placeholders, and generates a new sanitized document while preserving formatting.",
+      sample:" https://bit.ly/ai-ml-sample",
       challenges: [
         "Accurate PII Detection: Identify various PII entities such as names, phone numbers, addresses, emails, credit card numbers, and government IDs.",
         "Text and Layout Preservation: Redact PII while maintaining the document’s original structure and formatting.",
@@ -145,8 +146,8 @@ export const trackConfig = {
         "Forum/Q&A Section: Open discussions on study-related queries, scholarships, applications, etc.",
         "Events & Webinars: Notifications for career fairs, university sessions, and expert talks.",
         "Study Roadmap: A step-by-step guide for applications, visa processes, and scholarships.",
-        "Document Templates: Sample SOPs, LORs, resumes, and visa forms for easy reference.",
-        "Articles & Blogs: Alumni share experiences, application tips, and cultural insights.",
+        // "Document Templates: Sample SOPs, LORs, resumes, and visa forms for easy reference.",
+        // "Articles & Blogs: Alumni share experiences, application tips, and cultural insights.",
       ],
     },
     {
