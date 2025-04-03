@@ -2,7 +2,7 @@ export const scheduleConfig = {
   data: [
     {
       Day: "Day-1",
-      Date: "",
+      Date: "11th May 2025",
       TimeCont: [
         {
           id: "1",
@@ -64,7 +64,7 @@ export const scheduleConfig = {
     },
     {
       Day: "Day-2",
-      Date: "",
+      Date: "12th May 2025",
       TimeCont: [
         {
           id: "9",
