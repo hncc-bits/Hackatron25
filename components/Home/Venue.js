@@ -20,7 +20,7 @@ const Venue = () => {
           <div className="date">
             <h2>Date and Time</h2>
             <p>
-              Coming Soon
+              11th - 12th May 2025
               <br />
               8:00 AM Onwards
             </p>

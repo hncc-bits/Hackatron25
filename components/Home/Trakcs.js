@@ -90,24 +90,36 @@ const Trakcs = () => {
   };
 
   return (
-    <SectionLayout Title="TRACKS" Classname={"why-sponsor-section tracks"}>
+    <SectionLayout Title="PROBLEM STATEMENT" Classname={"why-sponsor-section tracks"}>
       <h3>
-        Hackatron features diverse tracks designed to help hackers tackle unique challenges while fostering creativity, collaboration, and innovation.
+      Hackatron is a platform to Think, Build, and Launch, welcoming all skill levels to explore innovation, solve real-world challenges, and push technological boundaries. With diverse tracks, it fosters hands-on problem-solving, creativity, and collaboration.
         <br />
-        Hackatron goes beyond being just an event—it's an opportunity to Think, Build, and Launch. With cutting-edge tracks for all skill levels, from beginners to experts, it offers a platform to explore new ideas, solve real-world problems, and create a lasting impact. Join us on this exciting journey of discovery and innovation!
-      </h3>
-      <div className="tracks-container">
-        {Track.map((track) => (
-          <TrackCard
-            {...track}
-            key={track.id}
-            onClick={() => handleCardClick(track)}
-          />
-        ))}
+        Beyond competition, Hackatron promotes learning, networking, and impact. Whether enhancing skills, connecting with innovators, or launching ideas, it provides the ideal space to turn vision into reality.
+=      </h3>
+      <div className="tracks-container">      
+      <div className="table-container">
+        <table className="tracks-table">
+          <thead>
+            <tr>
+              <th>Statement</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Track.map((item, index) => (
+              <tr key={index} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
+                <td>{item.statement}</td>
+                <td>{item.description}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
+    </div>
+
       <Popup track={selectedTrack} onClose={handleClosePopup} />
     </SectionLayout>
   );
-};
+};  
 
 export default Trakcs;
