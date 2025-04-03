@@ -57,18 +57,22 @@ const Popup = ({ track, onClose }) => {
 
   if (!track) return null;
 
-  const { problem, id, title, techStack, description, challenges, challengeDescription } = track;
+  const { problem, id, title, techStack, description,sample, challenges, challengeDescription } = track;
 
   return (
     <div className={`popup-overlay ${show ? "show" : ""}`} onClick={onClose}>
       <div className={`popup-content ${show ? "show" : ""}`} onClick={(e) => e.stopPropagation()}>
         <div className="popup-header">
-          <h2>Problem Statement Details (PS-{id})</h2>
+          <h2>Problem Statement Details</h2>
           <button className="close-btn" onClick={onClose}>×</button>
         </div>
         
         <table className="problem-table">
           <tbody>
+            <tr>
+              <th>Id</th>
+              <td>PS-{id}</td>
+            </tr>
             <tr>
               <th>Track</th>
               <td>{title}</td>
@@ -87,6 +91,12 @@ const Popup = ({ track, onClose }) => {
               <th>Description</th>
               <td>{description}</td>
             </tr>
+            {sample && (
+              <tr>
+              <th>Sample</th>
+              <td><a href={sample} target="_blank">{sample}</a></td>
+              </tr>
+            )}
             {challengeDescription && (
               <tr>
                 <th>Challenge Description</th>
@@ -125,7 +135,7 @@ const Tracks = () => {
   };
 
   return (
-    <SectionLayout Title="TRACKS" Classname={"why-sponsor-section tracks"}>
+    <SectionLayout Title="PROBLEM STATEMENT" Classname={"why-sponsor-section tracks"}>
       <h3>
         Hackatron features diverse tracks designed to help hackers tackle unique challenges while fostering creativity,
         collaboration, and innovation.
