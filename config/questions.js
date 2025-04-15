@@ -6,7 +6,7 @@ export const questionConfig = {
         {
           id: "1",
           Q: 'When and where will "HACKATRON" take place?',
-          A: "HACKATRON will be held in mid-April at BIT Sindri. The exact dates will be announced soon.",
+          A: "HACKATRON will be held on 11th May at BIT Sindri.",
         },
         {
           id: "2",
@@ -26,7 +26,7 @@ export const questionConfig = {
         {
           id: "5",
           Q: "Can I participate alone or do I need a team?",
-          A: "You can participate individually or in a team of up to 5 members.",
+          A: "No, each team must comprise 4 to 5 members, including at least one female participant.",
         },
       ],
     },
