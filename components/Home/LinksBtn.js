@@ -38,7 +38,7 @@ const LinksBtn = () => {
         style={{ height: "44px", width: "312px" }}
       />
       <a
-        href="https://drive.google.com/file/d/1UVAz44UyuOxBuIVsUICjOFqZ-H3pZBgG/view"
+        href="https://drive.google.com/file/d/1XTldu8OSRfwr1CChpLxBqxu6XcTyAakE/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="brochure-btn"
