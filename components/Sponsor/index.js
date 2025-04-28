@@ -44,12 +44,13 @@ const Sponsor = () => {
         
         id="sponsors"
       >
+        
         <div className="sponsor-container">
             <br/>
           <div className="GoldContainer">
-            <hr className="GoldText"></hr>
-            <h1 className="Goldt"> GOLD </h1>
-            <hr className="GoldTextp"></hr>
+            <hr className="HackText"></hr>
+            <h1 className="Goldt"> ORGANIZING PARTNER </h1>
+            <hr className="HackTextP"></hr>
           </div>
           {/* <SponsorContainer
           Name={diamond.Name}
@@ -193,7 +194,7 @@ const Sponsor = () => {
               Type={"PARTNERS"}
               
             >
-              {Allsponsor.GOLD.map((sponsor) => (
+              {Allsponsor.OrgPart.map((sponsor) => (
                 <SponsorWrapper
                   
                   key={sponsor.id}
@@ -203,6 +204,45 @@ const Sponsor = () => {
                 />
               ))}
             </SponsorContainer>
+            <div className="GoldContainer">
+          <hr className="HackText"></hr>
+          <h1 style={{fontSize: "40px"}}> HACKATHON PARTNER </h1>
+          <hr className="HackTextP"></hr>
+          </div>
+          <SponsorContainer
+            Name={"inkind"}
+            Img={communityPartner.Img}
+            Type={"SILVER SPONSORS"}
+          >
+            {Allsponsor.HackPart.map((sponsor) => (
+              <SponsorWrapper
+              className="imgHack"
+                key={sponsor.id}
+                Name={sponsor.Name}
+                Img={sponsor.Img}
+                Link={sponsor.Link}
+              />
+            ))}
+          </SponsorContainer>
+            <div className="GoldContainer">
+          <hr className="SilverText"></hr>
+          <h1 style={{fontSize: "40px"}}> GOLD </h1>
+          <hr className="SilverTextp"></hr>
+          </div>
+          <SponsorContainer
+            Name={"inkind"}
+            Img={communityPartner.Img}
+            Type={"SILVER SPONSORS"}
+          >
+            {Allsponsor.GOLD.map((sponsor) => (
+              <SponsorWrapper
+                key={sponsor.id}
+                Name={sponsor.Name}
+                Img={sponsor.Img}
+                Link={sponsor.Link}
+              />
+            ))}
+          </SponsorContainer>
             <div className="GoldContainer">
           <hr className="SilverText"></hr>
           <h1 style={{fontSize: "40px"}}> SILVER </h1>
@@ -224,9 +264,9 @@ const Sponsor = () => {
           </SponsorContainer>
         
             <div className="GoldContainer">
-          <hr className="SilverText"></hr>
+          <hr className="HackTextt"></hr>
           <h1 style={{fontSize: "40px"}}> PAST SPONSORS </h1>
-          <hr className="SilverTextp"></hr>
+          <hr className="HackTextPP"></hr>
           </div>
           <SponsorContainer
             Name={"inkind"}

@@ -1,5 +1,24 @@
 export const Allsponsor = {
 
+  OrgPart:[
+    {
+      d: "1",
+      Name: "Maya Data Privacy",
+      Img: "/images/sponsor/mdp1.png",
+      Link: "https://www.mayadataprivacy.com/",
+    }
+    
+  ],
+
+  HackPart:[
+    {
+      d: "1",
+      Name: "GeekRoom",
+      Img: "/images/sponsor/groom.png",
+      Link: "https://www.geekroom.in/",
+    }
+  ],
+  
   GOLD: [
     {
       id: "1",
