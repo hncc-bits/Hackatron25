@@ -236,6 +236,11 @@
   height: 100%;
   object-fit: contain;
 }
+.sponsor-section .sponsor .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .sponsor-section .sponsor .communityPartner img {
   width: 100%;
@@ -415,6 +420,30 @@
   top: 50%;
   opacity: .4;
 }
+.HackText{
+  left:10%;
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  opacity: .4;
+}
+.HackTextt{
+  left:13%;
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  opacity: .4;
+}
+.HackText{
+  left:10%;
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  opacity: .4;
+}
 .GoldTextp{
   right: 21%;
   width: 20%;
@@ -425,6 +454,22 @@
 }
 .SilverTextp{
   right: 21%;
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  opacity: .4;
+}
+.HackTextP{
+  right: 10%;
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  opacity: .4;
+}
+.HackTextPP{
+  right: 13%;
   width: 20%;
   position: absolute;
   z-index: -1;
@@ -448,6 +493,12 @@
 .SilverTextp {
   right: 3%;
   }
+  .HackText {
+    left: 2%;
+}
+.HackTextP {
+  right: 2%;
+  }
 }
 
 .Goldt{
@@ -457,4 +508,11 @@
 .GoldContainer{
   position: relative;
   text-align: center;
+}
+
+.imgHack img{
+  width: 100% !important;
+  height: auto;
+  /* object-fit: contain; */
+  overflow: hidden;
 }
