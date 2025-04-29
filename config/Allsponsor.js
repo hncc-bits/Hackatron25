@@ -4,7 +4,7 @@ export const Allsponsor = {
     {
       d: "1",
       Name: "Maya Data Privacy",
-      Img: "/images/sponsor/mdp1.png",
+      Img: "/images/sponsor/mdp5.png",
       Link: "https://www.mayadataprivacy.com/",
     }
     
@@ -14,7 +14,7 @@ export const Allsponsor = {
     {
       d: "1",
       Name: "GeekRoom",
-      Img: "/images/sponsor/groom.png",
+      Img: "/images/sponsor/Groom2.png",
       Link: "https://www.geekroom.in/",
     }
   ],
