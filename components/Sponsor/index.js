@@ -206,7 +206,7 @@ const Sponsor = () => {
             </SponsorContainer>
             <div className="GoldContainer">
           <hr className="HackText"></hr>
-          <h1 style={{fontSize: "40px"}}> HACKATHON PARTNER </h1>
+          <h1 style={{fontSize: "40px"}}> HACKATHON PARTNERS </h1>
           <hr className="HackTextP"></hr>
           </div>
           <SponsorContainer
