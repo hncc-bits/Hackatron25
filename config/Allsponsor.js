@@ -16,7 +16,13 @@ export const Allsponsor = {
       Name: "GeekRoom",
       Img: "/images/sponsor/Groom2.png",
       Link: "https://www.geekroom.in/",
-    }
+    },
+    {
+      d: "2",
+      Name: "Amul",
+      Img: "/images/sponsor/Amul.png",
+      Link: "https://www.amul.com/",
+    },
   ],
   
   GOLD: [
