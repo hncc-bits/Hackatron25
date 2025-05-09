@@ -34,6 +34,16 @@ export const Allsponsor = {
     }
 
   ],
+
+  Techpart:[
+    {
+      d: "1",
+      Name: "Technix",
+      Img: "/images/Technix_.jpg",
+      Link: "https://technixindia.com/",
+    }
+
+  ],
   GOLD: [
     {
       id: "1",
