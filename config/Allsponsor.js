@@ -25,6 +25,25 @@ export const Allsponsor = {
     },
   ],
   
+  Edupart:[
+    {
+      d: "1",
+      Name: "Devtown",
+      Img: "/images/dev_t.jpg",
+      Link: "https://www.devtown.in/",
+    }
+
+  ],
+
+  Techpart:[
+    {
+      d: "1",
+      Name: "Technix",
+      Img: "/images/Technix_.jpg",
+      Link: "https://technixindia.com/",
+    }
+
+  ],
   GOLD: [
     {
       id: "1",
