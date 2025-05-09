@@ -224,6 +224,30 @@ const Sponsor = () => {
               />
             ))}
           </SponsorContainer>
+          <div className="GoldContainer">
+          <hr className="HackText"></hr>
+          <h1 style={{fontSize: "40px"}}> EDUCATIONAL PARTNER </h1>
+          <hr className="HackTextP"></hr>
+          </div>
+
+          <SponsorContainer
+            Name={"inkind"}
+            Img={communityPartner.Img}
+            Type={"PARTNERS"}
+          >
+            {Allsponsor.Edupart.map((sponsor) => (
+              <SponsorWrapper
+              className="imgHack"
+                key={sponsor.id}
+                Name={sponsor.Name}
+                Img={sponsor.Img}
+                Link={sponsor.Link}
+              />
+            ))}
+          </SponsorContainer>
+
+
+
             <div className="GoldContainer">
           <hr className="SilverText"></hr>
           <h1 style={{fontSize: "40px"}}> GOLD </h1>
